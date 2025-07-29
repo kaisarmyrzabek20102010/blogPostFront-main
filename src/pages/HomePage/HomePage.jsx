@@ -4,7 +4,7 @@ import "./homepage.css";
 const App = () => {
   return (
     <>
-      <div className="hero-container">
+      <section className="hero-container">
         <div className="content">
           <h1>Табиғат пен мәдениеттің айрықша тартымдылығы</h1>
           <p className="subtitle">Қазақстанның көркем табиғатын зертте</p>
@@ -32,11 +32,12 @@ const App = () => {
             <button className="taby">ТАБУ</button>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="dest-container">
+      <section className="dest-container">
         <div className="talgar">
-            <p className="rating">⭐ 4.1</p>
+          <div className="rating">⭐ 4.1</div>
+
           <div className="card-info">
             <h3>Пик Талгар</h3>
             <p className="price">$89</p>
@@ -44,7 +45,8 @@ const App = () => {
         </div>
 
         <div className="kolsai">
-            <p className="rating">⭐ 4.9</p>
+          <div className="rating">⭐ 4.9</div>
+
           <div className="card-info">
             <h3>Көлсай</h3>
             <p className="price">$149</p>
@@ -52,14 +54,45 @@ const App = () => {
         </div>
 
         <div className="kanion">
-            <p className="rating">⭐ 4.5</p>  
+          <div className="rating">⭐ 4.5</div>
+
           <div className="card-info">
-            <h3>Шарын шатқалы</h3>
+            <h3>Шарын шатқал</h3>
             <p className="price">$129</p>
           </div>
         </div>
+      </section>
+      <div className="see-more-container">
+        <button className="see-more">
+          КӨБІРЕК КӨРУ
+          <img src="https://www.svgrepo.com/show/510165/right-arrow.svg" />
+        </button>
       </div>
-      <button className="see-more">КӨБІРЕК КӨРУ</button>
+
+      <section className="quote-container">
+        <div className="photo"> </div>
+        <div className="quote-text">
+          <h2>ӘЛЕМГЕ ҚАРАҢЫЗ. АРМАННАН ДА КЕРЕМЕТ</h2>
+          <p>Рэй Брэдберри</p>
+        </div>
+      </section>
+
+      <img src="./Frame 12.svg"/>
+
+      <section class="grid-container">
+        <div class="item item1">
+          <img src="https://www.muchbetteradventures.com/magazine/content/images/2024/04/mount-everest-at-sunset.jpg" />
+        </div>
+        <div class="item item2">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdKFv6cSAm6VDFpsWAIw9rVtpe9flBJKbF8A&s" />
+        </div>
+        <div class="item item3">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMlJ69pt-4m9Jl-475-PAjrva1Sk-02wMJFA&s" />
+        </div>
+        <div class="item item4">
+          <img src="https://images.takeshape.io/1f1d0876-be74-4b33-99c8-6ac93f1d70db/dev/4468e4af-526e-4ed6-a0c1-a0dc7673cef3/nicolo-di-giovanni-535450-unsplash.png?auto=compress%2Cformat&w=1440" />
+        </div>
+      </section>
     </>
   );
 };

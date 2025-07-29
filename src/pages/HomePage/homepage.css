@@ -112,7 +112,6 @@ h1 {
   justify-content: center;
   gap: 24px;
   padding: 30px;
-  background: #f2f2f2;
 }
 
 .card {
@@ -162,24 +161,34 @@ h1 {
   color: #2e8b57;
 }
 
-.rating {
-  color: #f39c12;
-}
-
 .see-more {
-  background: #00c254;
+  display: flex;
+  justify-content: center;
+  background: #000000;
   color: white;
   border: none;
-  padding: 12px 24px;
+  padding: 12px;
   font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
   margin-top: 20px;
-  transition: background 0.3s ease;
+  transition: background 0.2s ease;
+}
+
+.see-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.see-more img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
 }
 
 .see-more:hover {
-  background: #00a545;
+  background: #414141;
 }
 
 .card-img {
@@ -191,35 +200,25 @@ h1 {
   border-top-right-radius: 12px;
 }
 
-/* Individual image backgrounds */
-.talgar {
-  background-image: url("https://gorny-club.kz/wp-content/uploads/2020/04/0_1_DSC01125-Talgar-min.jpg");
-  border-radius: 25px;
-  width: 400px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 600px;
+.rating {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 30px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 16px;
+  text-align: center;
 }
 
-.kolsai {
-  background-image: url("https://qazaqgeography.kz/assets/media/kolsayskie-ozera-natsionalnyy-park/kolsay-vb.jpg");
-  border-radius: 25px;
-  width: 400px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
+.talgar,
+.kolsai,
 .kanion {
   border-radius: 25px;
   width: 400px;
@@ -231,5 +230,115 @@ h1 {
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+.talgar {
+  background-image: url("https://gorny-club.kz/wp-content/uploads/2020/04/0_1_DSC01125-Talgar-min.jpg");
+}
+
+.kolsai {
+  background-image: url("https://qazaqgeography.kz/assets/media/kolsayskie-ozera-natsionalnyy-park/kolsay-vb.jpg");
+}
+
+.kanion {
   background-image: url("https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20190903133241/Sharyn-Canyon-Kazakhstan.jpg");
+}
+
+.quote-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  padding: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.photo {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Ray_Bradbury_1959.JPG/250px-Ray_Bradbury_1959.JPG"); /* Replace with your photo */
+  width: 170px;
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+.quote-text {
+  max-width: 400px;
+  text-align: left;
+}
+
+.quote-text h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.quote-text p {
+  font-size: 1.2rem;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.boo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("./qwe.png");
+  width: 90vw;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+.mountain-grid {
+  display: grid;
+  grid-template-columns: repeat(2, fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.item {
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+}
+
+.item1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.item2 {
+  grid-column: span 2;
+}
+
+.item3 {
+  grid-column: span 2;
+}
+
+.item4 {
+  grid-column: span 4;
 }
