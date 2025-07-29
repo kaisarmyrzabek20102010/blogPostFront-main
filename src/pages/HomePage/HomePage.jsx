@@ -77,8 +77,6 @@ const App = () => {
         </div>
       </section>
 
-      <img src="./Frame 12.svg"/>
-
       <section class="grid-container">
         <div class="item item1">
           <img src="https://www.muchbetteradventures.com/magazine/content/images/2024/04/mount-everest-at-sunset.jpg" />
@@ -90,9 +88,21 @@ const App = () => {
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMlJ69pt-4m9Jl-475-PAjrva1Sk-02wMJFA&s" />
         </div>
         <div class="item item4">
-          <img src="https://images.takeshape.io/1f1d0876-be74-4b33-99c8-6ac93f1d70db/dev/4468e4af-526e-4ed6-a0c1-a0dc7673cef3/nicolo-di-giovanni-535450-unsplash.png?auto=compress%2Cformat&w=1440" />
+          <img src="https://cdn.britannica.com/17/242417-050-49F99308/Himalaya-mountain-peaks-Cho-La-Pass-Everest-National-Park-Nepal.jpg" />
         </div>
-      </section>
+      </section> 
+
+      <footer>
+        <h1>QazaqMap</h1>
+
+        <div>
+          <nav></nav>
+          <nav></nav>
+          <nav></nav>
+        </div>
+
+        <div></div>
+      </footer>
     </>
   );
 };
