@@ -12,7 +12,7 @@
             e.preventDefault()
 
             try {
-                const response = await axios.post('http://localhost:3002/api/register', {
+                const response = await axios.post('http://localhost:3002/auth/register', {
                     username,
                     password
                 })
