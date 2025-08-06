@@ -1,0 +1,44 @@
+.header {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1a202c;
+  text-decoration: none;
+}
+
+.header-create-post {
+  color: #3182ce;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header-create-post:hover {
+  text-decoration: underline;
+}
+
+.header-auth-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.header-auth-link {
+  text-decoration: underline;
+  color: #3182ce;
+}
+
+.header-auth-link:hover {
+  color: #2c5282;
+}

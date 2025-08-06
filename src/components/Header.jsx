@@ -1,22 +1,30 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Header.css";
 
 export default function Header() {
   return (
-    <header className='border'>
-        <div className='flex justify-between items-center py-4 max-w-7xl mx-auto'>
-            <Link to={'/'} className='font-bold'>
-                Blog App
-            </Link>
+    <header className="header">
+      <div className="header-container">
+        <Link to={"/"} className="header-logo">
+          QazaqMap
+        </Link>
 
-            <Link to={'/create'}>
-              Create New Post
-            </Link>
-            <div className='flex gap-4'>
-                <Link className='underline' to={'/login'}>Login</Link>
-                <Link className='underline' to={'/register'}>Register</Link>
-            </div>
+        <Link to={"/create"} className="header-create-post">
+          пікір қалдыру
+        </Link>
+        <div className="header-auth-links">
+          <Link className="header-auth-link" to={"/login"}>
+            Кіру
+          </Link>
+          <Link className="header-auth-link" to={"/register"}>
+            Тіркелу
+          </Link>
+          <Link className="header-auth-link" to={"/profile"}>
+            Профиль
+          </Link>
         </div>
+      </div>
     </header>
-  )
+  );
 }

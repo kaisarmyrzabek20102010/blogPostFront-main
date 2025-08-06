@@ -1,0 +1,176 @@
+.cards-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.flight-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.flight-cards img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.flight-cards {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.airline-title {
+  color: #333;
+  margin: 0 0 15px 0;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.flight-times {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.select-btn {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.select-btn:hover {
+  background-color: #003d82;
+}
+
+/* Information Section Styling */
+.info-section {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.map-title {
+  color: #333;
+  margin-top: 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.info-table th,
+.info-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.info-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.contacts-section {
+  margin-top: 20px;
+}
+
+.contacts-section h4 {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flight-cards {
+    padding: 15px;
+  }
+
+  .info-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .airline-title {
+    font-size: 1.1rem;
+  }
+
+  .flight-times {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-container {
+    padding: 10px;
+  }
+
+  .flight-times {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .info-table th,
+  .info-table td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+.message {
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+.message.error {
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #ffcdd2;
+}
+
+.select-btn.selected {
+  background-color: #4caf50;
+}
+
+.select-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.airline-logo {
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}

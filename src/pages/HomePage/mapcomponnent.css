@@ -1,0 +1,56 @@
+.map-section {
+  padding: 40px 20px;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.map-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.leaflet-container {
+  width: 100%;
+  max-width: 1100px;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.leaflet-popup-content {
+  text-align: center;
+}
+
+.leaflet-popup-content img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.leaflet-popup-content h4 {
+  margin: 8px 0 4px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.leaflet-popup-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .map-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .leaflet-container {
+    height: 350px;
+  }
+}
